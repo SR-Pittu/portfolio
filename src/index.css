@@ -1,0 +1,156 @@
+/**
+ * Global Styles - index.css
+ * 
+ * This file contains:
+ * - Tailwind CSS imports and custom utilities
+ * - CSS custom properties (theme tokens)
+ * - Global HTML/body styles
+ * - Reusable component styles
+ * - Custom animations and effects
+ * - Responsive utilities
+ */
+
+/* Import Tailwind CSS framework with all directives */
+@import "tailwindcss";
+
+/* =========================
+   Theme Tokens & Variables
+   
+   These CSS custom properties define the color scheme
+   and are used throughout the application for consistency.
+========================= */
+:root {
+  --accent: #7c3aed;
+  /* Primary accent color (purple) */
+  --accent-soft: #251b43;
+  /* Lighter accent for subtle elements */
+  --bg-primary: #fafafa;
+  /* Primary background color */
+}
+
+/* =========================
+   HTML & Body Styles
+========================= */
+
+/* Enable smooth scrolling behavior for anchor links */
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+/* Global body styles */
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fafafa 0%, #f8f7ff 50%, #f3f0ff 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #0f172a;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* =========================
+   ORBIT ITEM - Used by Skills.jsx
+   
+   Styling for orbiting skill category buttons
+========================= */
+
+/* Base style for orbiting items */
+.orbit-item {
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Full-site glitter layer */
+.glitter-layer {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Base glitter particle */
+.glitter {
+  position: absolute;
+  border-radius: 9999px;
+  opacity: 0;
+  filter: blur(0.5px);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform, opacity;
+}
+
+/* UP direction (bottom → top) */
+.glitter-up {
+  bottom: -24px;
+  animation-name: glitterFloatUp;
+}
+
+/* DOWN direction (top → bottom) */
+.glitter-down {
+  top: -24px;
+  animation-name: glitterFloatDown;
+}
+
+/* Float UP */
+@keyframes glitterFloatUp {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.7);
+    opacity: 0;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  50% {
+    transform: translate3d(calc(var(--drift, 0px) * 0.5), -55vh, 0) scale(1.1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(var(--drift, 0px), -115vh, 0) scale(0.5);
+    opacity: 0;
+  }
+}
+
+/* Float DOWN */
+@keyframes glitterFloatDown {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.7);
+    opacity: 0;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  50% {
+    transform: translate3d(calc(var(--drift, 0px) * 0.5), 55vh, 0) scale(1.1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(var(--drift, 0px), 115vh, 0) scale(0.5);
+    opacity: 0;
+  }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .glitter-layer {
+    display: none;
+  }
+}

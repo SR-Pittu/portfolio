@@ -1,0 +1,117 @@
+{
+  "contact": {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "linkedin": "https://linkedin.com/in/johndoe",
+    "github": "https://github.com/johndoe",
+    "location": "San Francisco, CA"
+  },
+  "experience": [
+    {
+      "role": "Senior Software Engineer",
+      "company": "Tech Company Inc",
+      "location": "Remote",
+      "dates": "Jan 2023 – Present",
+      "bullets": [
+        "Led development of core features using React and Node.js",
+        "Improved system performance by 40% through optimization",
+        "Mentored junior developers on best practices"
+      ],
+      "tech": ["React", "Node.js", "PostgreSQL", "Docker", "AWS"]
+    },
+    {
+      "role": "Junior Developer",
+      "company": "Startup Inc",
+      "location": "New York, NY",
+      "dates": "Jun 2021 – Dec 2022",
+      "bullets": [
+        "Built responsive web applications using React",
+        "Collaborated with design team on UI implementation",
+        "Fixed bugs and optimized code performance"
+      ],
+      "tech": ["React", "JavaScript", "CSS", "Git"]
+    }
+  ],
+  "skills": [
+    {
+      "title": "Languages",
+      "items": ["Python", "JavaScript", "Java", "SQL"]
+    },
+    {
+      "title": "Frontend",
+      "items": ["React", "HTML5", "CSS3", "Tailwind CSS"]
+    },
+    {
+      "title": "Backend",
+      "items": ["Node.js", "Express", "Flask", "REST APIs"]
+    },
+    {
+      "title": "Databases",
+      "items": ["PostgreSQL", "MySQL", "MongoDB"]
+    },
+    {
+      "title": "Cloud & DevOps",
+      "items": ["AWS", "Docker", "Git", "CI/CD"]
+    },
+    {
+      "title": "Testing & Tools",
+      "items": ["Jest", "Selenium", "Postman"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "E-Commerce Platform",
+      "description": "Full-stack e-commerce solution with real-time inventory management and payment processing.",
+      "tech": ["React", "Node.js", "MongoDB", "Stripe"],
+      "links": {
+        "live": "https://example-ecommerce.com",
+        "github": "https://github.com/johndoe/ecommerce"
+      }
+    },
+    {
+      "title": "Task Management App",
+      "description": "Collaborative task management tool with real-time updates and team features.",
+      "tech": ["React", "Firebase", "Tailwind CSS"],
+      "links": {
+        "live": "https://task-app-demo.netlify.app",
+        "github": "https://github.com/johndoe/task-app"
+      }
+    },
+    {
+      "title": "Data Visualization Dashboard",
+      "description": "Interactive dashboard for visualizing complex datasets with charts and filters.",
+      "tech": ["React", "D3.js", "Python", "API"],
+      "links": {
+        "live": "",
+        "github": "https://github.com/johndoe/dashboard"
+      }
+    }
+  ],
+  "education": [
+    {
+      "school": "University of California",
+      "degree": "Bachelor's, Computer Science",
+      "dates": "AUG 2017 – MAY 2021",
+      "gpa": "3.8 / 4.0",
+      "coursework": [
+        "Data Structures",
+        "Algorithms",
+        "Web Development",
+        "Database Design",
+        "Software Engineering"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "AWS Certified Solutions Architect",
+      "org": "Amazon Web Services",
+      "year": "2023"
+    },
+    {
+      "title": "Google Cloud Professional Data Engineer",
+      "org": "Google Cloud",
+      "year": "2023"
+    }
+  ]
+}
