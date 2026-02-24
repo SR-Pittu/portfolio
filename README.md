@@ -2,7 +2,7 @@
 
 A modern, fully-responsive portfolio website built with React, Vite, and Tailwind CSS.
 
-**Live Demo**: [View Portfolio](https://sobhaportfolio.netlify.app)
+**Live Demo**: [View Portfolio](https://sobha-portfolio.netlify.app/)
 
 ---
 
