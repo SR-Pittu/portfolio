@@ -160,10 +160,7 @@ npm run build
 
 ###  Customize
 
-Update your portfolio content in `src/data/data.js`. Use [data/sample-data.json](data/sample-data.json) as a reference for the data structure.
-
-
-**Note**: `data/*.json` is ignored in git - maintain your content in `src/data/data.js`
+Update your portfolio content in `src/data/data.js`. Edit the exported objects for contact, experience, skills, projects, education, and certifications.
 
 
 Customize styling by modifying CSS variables in `src/index.css`:
