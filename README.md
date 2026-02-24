@@ -1,4 +1,4 @@
-# 🚀 Sobhareddy Pittu - Portfolio Website
+#  Sobhareddy Pittu - Portfolio Website
 
 A modern, fully-responsive portfolio website built with React, Vite, and Tailwind CSS.
 
@@ -6,19 +6,19 @@ A modern, fully-responsive portfolio website built with React, Vite, and Tailwin
 
 ---
 
-## ✨ Features
+###  Features
 
-- ⚡ Lightning fast with Vite HMR
-- 📱 Fully responsive design
-- 🎨 Modern UI with smooth animations
-- 🧩 Component-based architecture
-- 🎭 Git-inspired experience timeline
-- 📊 Interactive orbit skills display
-- 🔒 Secure and accessible
+-  Lightning fast with Vite HMR
+-  Fully responsive design
+-  Modern UI with smooth animations
+-  Component-based architecture
+-  Git-inspired experience timeline
+-  Interactive orbit skills display
+-  Secure and accessible
 
 ---
 
-## 🏗️ Project Structure
+###  Project Structure
 
 ```
 Portfolio/
@@ -129,7 +129,7 @@ Portfolio/
 
 ---
 
-### 🛠️ Tech Stack
+###  Tech Stack
 
 - **React** 19.2.0 - UI library
 - **Vite** 7.3.1 - Build tool
@@ -139,7 +139,7 @@ Portfolio/
 
 ---
 
-### 🚀 Getting Started
+###  Getting Started
 
 #### Install & Run
 
@@ -158,7 +158,7 @@ npm run build
 
 ---
 
-### ✏️ Customize
+###  Customize
 
 Update your portfolio content in `src/data/data.js`. Use [data/sample-data.json](data/sample-data.json) as a reference for the data structure.
 
@@ -177,7 +177,7 @@ Customize styling by modifying CSS variables in `src/index.css`:
 
 ---
 
-### 🚀 Deploy
+###  Deploy
 
 **Netlify**: Push to GitHub → connect repo → auto-deploys  
 **Vercel**: Import project → one-click deploy  
@@ -185,7 +185,7 @@ Customize styling by modifying CSS variables in `src/index.css`:
 
 ---
 
-### 🔧 Troubleshooting
+###  Troubleshooting
 
 ```bash
 # Dev server issues
@@ -204,7 +204,7 @@ npm run lint
 
 **Sobhareddy Pittu**
 - 🔗 [LinkedIn](https://linkedin.com/in/sobhareddy-pittu/)
-- 🐙 [GitHub](https://github.com/SR-Pittu)
+- 🔗 [GitHub](https://github.com/SR-Pittu)
 
 ---
 
