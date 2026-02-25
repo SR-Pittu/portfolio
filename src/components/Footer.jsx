@@ -26,27 +26,28 @@ export default function Footer() {
     <footer
       className="
         bg-white/60 border-b border-slate-100
-        shadow-[0_-4px_20px_rgba(0,0,0,0.04)]
+        mt-0
       "
     >
-      <div className="max-w-6xl mx-auto px-6 py-14 flex flex-col md:flex-row items-center justify-between gap-6">
-        
+      <div className="max-w-6xl mx-auto px-6 py-6 grid grid-cols-3 items-center">
+
         {/* Left side - Branding and copyright */}
-        <div className="text-center md:text-left">
-          <div className="text-xl font-black tracking-tight">
+        <div className="text-left">
+          <span className="text-lg font-black tracking-tight">
             {/* Logo with gradient text */}
             <span className="text-[#7c3aed] italic">SobhaReddy</span>
             <span className="text-slate-900"> Pittu</span>
-          </div>
-
-          {/* Copyright notice with auto-updating year */}
-          <div className="mt-2 text-sm text-slate-500 font-medium">
-            © {year} Sobhareddy Pittu. All rights reserved.
-          </div>
+          </span>
         </div>
 
+        {/* Copyright notice with auto-updating year */}
+        <div className="text-center text-sm text-slate-500 font-medium">
+          © {year} Sobhareddy Pittu. All rights reserved.
+        </div>
+
+
         {/* Right side - Social media links */}
-        <div className="flex items-center gap-6">
+        <div className="flex justify-end gap-4">
           {/* GitHub link */}
           <SocialIcon href={contact.github}>
             <Github size={28} />
@@ -72,8 +73,8 @@ function SocialIcon({ href, children }) {
   return (
     <a
       href={href}
-      target="_blank"                  // Open in new tab
-      rel="noreferrer"                 // Security: no referrer info passed
+      target="_blank"
+      rel="noreferrer"
       className="
         text-slate-400
         hover:text-[#7c3aed]

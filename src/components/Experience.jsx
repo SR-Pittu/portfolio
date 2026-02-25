@@ -56,7 +56,7 @@ function ExperienceCard({ job, idx }) {
         className={`
           absolute left-[10px] top-1.5 w-3.5 h-3.5 rounded-full border-[3px] border-white z-10
           transition-all duration-300 shadow-[0_0_0_1px_#6366f1]
-          ${isExpanded ? "bg-indigo-600 scale-125" : "bg-slate-300 group-hover:bg-indigo-400"}
+          ${isExpanded ? "bg-indigo-600 scale-125" : "bg-indigo-300 group-hover:bg-indigo-400"}
         `}
       />
 
@@ -65,7 +65,7 @@ function ExperienceCard({ job, idx }) {
         {/* Header with commit hash and date */}
         <div className="flex items-center gap-2 mb-1">
           <span
-            className={`font-mono text-[10px] font-bold px-1.5 py-0.5 rounded transition-colors ${isExpanded ? "bg-indigo-600 text-white" : "bg-slate-100 text-slate-500"
+            className={`font-mono text-[10px] font-bold px-1.5 py-0.5 rounded transition-colors  ${isExpanded ? "bg-indigo-600 text-white" : "bg-slate-100 text-green-500"
               }`}
           >
             {commit}
@@ -212,7 +212,7 @@ export default function Experience() {
               {/* Git command footer */}
               <div className="mt-12 pt-8 border-t border-slate-100 hidden lg:block">
                 <div className="font-mono text-indigo-400 text-sm mb-1 font-bold">
-                  git push --force origin main
+                  git push origin main
                 </div>
               </div>
 
