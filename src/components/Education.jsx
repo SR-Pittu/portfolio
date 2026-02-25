@@ -20,7 +20,7 @@ import { education, certifications } from "../data/data";
 function SectionTitle({ title }) {
   return (
     <div className="flex flex-col mb-8">
-      <h2 className="text-3xl md:text-4xl font-black tracking-tighter text-slate-900 leading-tight">
+      <h2 className="text-5xl md:text-6xl font-black tracking-tighter text-slate-900 leading-tight">
         {title}
       </h2>
     </div>
@@ -53,7 +53,7 @@ function AcademicCard({ e }) {
 
           {/* GPA badge - only if present */}
           {e.gpa ? (
-            <div className="px-2 py-0.5 bg-white border border-slate-100 rounded-full text-[10px] font-bold text-slate-500 shadow-sm">
+            <div className="px-2 py-0.5 bg-white border border-slate-100 rounded-full text-[10px] font-bold text-slate-500 shadow-sm bg-green-50 border-green-100 text-green-600">
               GPA: {e.gpa}
             </div>
           ) : null}
@@ -119,9 +119,9 @@ function AcademicCard({ e }) {
  */
 export default function Education() {
   return (
-    <section id="education" className="py-16 selection:bg-[#7c3aed]/10">
-      <div className="max-w-6xl mx-auto px-4 md:px-6">
-        <SectionTitle title="Education & Certifications" />
+    <section id="education" className="py-16 selection:bg-[#7c3aed]/10 border-t border-slate-100">
+      <div className="max-w-6xl mx-auto px-6">
+        <SectionTitle title="Education" />
 
         {/* Main container with subtle background decoration */}
         <div className="relative bg-white border border-slate-200 rounded-[2rem] p-6 md:p-8 lg:p-10 shadow-[0_20px_50px_rgba(0,0,0,0.02)] overflow-hidden">
@@ -209,7 +209,7 @@ export default function Education() {
                     </p>
                   </div>
                   <p className="text-[13px] text-slate-500 mt-2 font-medium leading-relaxed">
-                    Focusing on System Design, Distributed Databases, Advanced Cloud Architecture and .
+                    Focusing on System Design, Distributed Databases, Advanced Cloud Architecture.
                   </p>
                 </div>
               </div>

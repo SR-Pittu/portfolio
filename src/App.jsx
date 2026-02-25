@@ -26,37 +26,23 @@ import Background from "./components/Background";
 export default function App() {
   return (
     <>
-      {/* Main page container with gradient background */}
-      <div
-        className="
-          min-h-screen
-          bg-gradient-to-b
-          from-[#fafafa]
-          via-[#f8f7ff]
-          to-[#f3f0ff]
-        "
-      >
-        {/* Decorative animated background component */}
-        {/* <Background /> / */}
-        <div className="relative z-10">
-          {/* Navigation bar - fixed at top */}
-          <Navbar />
+      {/* <Background />  */}
+      <div className="relative z-10 background: bg-gradient-to-r from-violet-200 pink-100 to-sky-100">
+        {/* Navigation bar - fixed at top */}
+        <Navbar />
 
-          {/* Main content sections */}
-          <main>
-            <Hero />          {/* Intro and call-to-action */}
-            <Experience />    {/* Work experience timeline */}
-            <Projects />      {/* Featured projects showcase */}
-            <Skills />        {/* Technical skills in orbit layout */}
-            <Education />     {/* Education and certifications */}
-            <Contact />       {/* Contact form and info */}
-          </main>
+        {/* Main content sections */}
+        <main>
+          <Hero />          {/* Intro and call-to-action */}
+          <Experience />    {/* Work experience timeline */}
+          <Projects />      {/* Featured projects showcase */}
+          <Skills />        {/* Technical skills in orbit layout */}
+          <Education />     {/* Education and certifications */}
+          <Contact />       {/* Contact form and info */}
+        </main>
+        < Footer />
+      </div>
 
-           < Footer />
-        </div>
-       
-      </div >
-      
     </>
   );
 }
