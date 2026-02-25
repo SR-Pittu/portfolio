@@ -37,7 +37,7 @@ export default function App() {
         "
       >
         {/* Decorative animated background component */}
-        <Background /> /
+        {/* <Background /> / */}
         <div className="relative z-10">
           {/* Navigation bar - fixed at top */}
           <Navbar />
