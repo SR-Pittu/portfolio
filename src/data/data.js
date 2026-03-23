@@ -20,283 +20,155 @@
 // ============================================================================
 
 export const contact = {
-  name: "Sobhareddy Pittu",
-  email: "sobhareddypittu@gmail.com", 
-  linkedin: "https://www.linkedin.com/in/sobhareddy-pittu-712b39207/", 
-  github: "https://github.com/SR-Pittu", 
-  location: "United States",
+  name: "Sobha Pittu",
+  email: "sobhareddypittu@gmail.com",
+  phone: "+1 (660) 528-1752",
+  linkedin: "https://www.linkedin.com/in/sobhareddy-pittu/",
+  github: "https://github.com/SR-Pittu",
+  // portfolio: "Portfolio",
+  location: "Remote",
 };
-
-// ============================================================================
-// WORK EXPERIENCE
-// ============================================================================
-// Array of all professional positions, ordered from most recent to oldest
 
 export const experience = [
   {
     role: "Software Engineer",
-    company: "Hillsoft Business Solutions LLC",
+    company: "Hillsoft Business Solutions",
     location: "Remote",
-    dates: "Jun 2025 – Present",
+    dates: "June 2025 - Present",
     bullets: [
-      "Build and maintain production full stack applications using React and Python (Flask).",
-      "Optimize REST APIs and backend queries, improving response times by 30%.",
-      "Develop and maintain CI/CD pipelines with GitLab CI and Jenkins, integrating Playwright automation."
+      "Design, develop, and maintain scalable cloud-based full-stack applications using React and Flask to support data-intensive workflows in production environments.",
+      "Design and optimize REST APIs, improving response times by 30% through database query tuning and backend refactoring.",
+      "Implement CI/CD pipelines using GitLab CI and Jenkins, enabling automated builds, testing, and reliable production deployments.",
+      "Integrate Playwright automated tests into CI pipelines, improving release reliability and reducing regression risk.",
+      "Collaborate with cross-functional teams to diagnose and resolve production issues, improving system stability and reducing downtime.",
+      "Lead API testing workflows and documentation standardization, reducing development rework by 25%.",
+      "Improve system reliability through proactive monitoring, code reviews, and rapid resolution of production issues."
     ],
-    tech: ["React", "Python", "Flask", "REST APIs", "GitLab CI/CD", "Jenkins", "Playwright"],
+    tech: ["React", "Flask", "REST APIs", "GitLab CI", "Jenkins", "Playwright", "Python", "JavaScript"]
   },
-
   {
     role: "Associate Software Engineer",
     company: "Ventechsoft Inc",
     location: "Remote",
-    dates: "Dec 2024 – May 2025",
+    dates: "December 2024 - May 2025",
     bullets: [
-      "Developed Flask REST APIs integrated with AWS EC2 and RDS.",
-      "Built responsive frontend interfaces using JavaScript, HTML, CSS, and Bootstrap.",
-      "Performed API and integration testing using Postman and Katalon."
+      "Developed and maintained REST APIs integrated with AWS EC2, Step Functions, relational databases, improving data access performance.",
+      "Built responsive front-end interfaces, enhancing usability and reducing user-reported issues by ~20%.",
+      "Executed API and integration testing, improving release reliability and reducing defects by approximately 15%.",
+      "Supported AWS deployment, monitoring, and performance optimization to enhance system stability, uptime, and security.",
+      "Ensured adherence to secure coding practices and data handling standards in cloud-based environments."
     ],
-    tech: ["Python", "Flask", "AWS", "JavaScript", "Bootstrap", "Postman", "Katalon"],
+    tech: ["REST APIs", "AWS EC2", "AWS Step Functions", "MySQL", "PostgreSQL", "React", "Python", "JavaScript"]
   },
-
   {
-    role: "Junior Software Developer Intern",
+    role: "Junior Software Developer - Internship",
     company: "Unnanu Inc",
     location: "Remote",
-    dates: "Apr 2024 – Dec 2024",
+    dates: "April 2024 - December 2024",
     bullets: [
-      "Built backend services and frontend components using Python and React.",
-      "Automated regression testing and supported Azure DevOps CI/CD pipelines.",
-      "Collaborated in Agile sprints to deliver production-ready features and fixes."
+      "Built backend APIs and frontend features using Python and React, improving workflow performance and reducing response time by 20%.",
+      "Automated regression tests and supported Azure DevOps CI/CD pipelines, reducing manual testing effort by 40% and improving release reliability.",
+      "Participated in Agile development, performing code reviews, resolving production issues to improve system stability by 15%.",
+      "Developed REST API endpoints and frontend integrations, improving data retrieval efficiency by 25%."
     ],
-    tech: ["Python", "React", "Azure DevOps", "Automation Testing"],
+    tech: ["Python", "React", "REST APIs", "Azure DevOps", "Selenium", "JavaScript"]
   },
-
   {
-    role: "Graduate Assistant",
+    role: "Graduate Assistant - Application Design: Patterns and Frameworks",
     company: "Northwest Missouri State University",
     location: "Maryville, MO, USA",
-    dates: "Jan 2023 – Dec 2023",
+    dates: "January 2023 - December 2023",
     bullets: [
-      "Developed Java applications using MVC and object-oriented design patterns.",
-      "Improved legacy code performance and maintainability.",
-      "Supported debugging, testing, and version control workflows."
+      "Developed Java applications using MVC, Factory, and Singleton design patterns to build scalable, maintainable systems.",
+      "Refactored legacy code, improving maintainability and performance by 20%.",
+      "Assisted with debugging, testing, and version control, improving application stability.",
+      "Mentored undergraduate students in OOP and design patterns, improving code quality and assignment accuracy by 25%.",
+      "Led weekly help sessions for students on design patterns and course assignments, strengthening problem-solving skills and improving overall class performance."
     ],
-    tech: ["Java", "OOP", "MVC", "Git"],
-  },
-
-  {
-    role: "Junior Software Engineer Intern",
-    company: "Lohitha Life Science Pvt Ltd",
-    location: "Remote",
-    dates: "Jan 2022 – Jun 2022",
-    bullets: [
-      "Built full stack applications using Java, Spring MVC, and Oracle DB.",
-      "Developed responsive UIs and automated testing using Selenium.",
-      "Contributed across development, testing, and deployment phases."
-    ],
-    tech: ["Java", "Spring MVC", "Oracle DB", "Selenium"],
+    tech: ["Java", "MVC", "Design Patterns", "Git"]
   }
 ];
-
-// ============================================================================
-// TECHNICAL SKILLS
-// ============================================================================
-// Skills organized by category/domain
 
 export const skills = [
   {
     title: "Languages",
-    items: [
-      "Python",
-      "Java",
-      "JavaScript",
-      "TypeScript",
-      "SQL",
-    ],
+    items: ["Python", "Java", "JavaScript", "TypeScript", "SQL"]
   },
   {
     title: "Frontend",
-    items: [
-      "React",
-      "HTML5",
-      "CSS3",
-      "Tailwind CSS",
-      "Bootstrap",
-    ],
+    items: ["React", "Tailwind CSS", "Bootstrap", "HTML", "CSS"]
   },
   {
     title: "Backend",
-    items: [
-      "FastAPI",
-      "Flask",
-      "Spring Boot",
-      "REST API Design",
-      "API Integration",
-    ],
+    items: ["Flask", "FastAPI", "Spring Boot", "REST APIs", "API Design"]
   },
   {
     title: "Databases",
-    items: [
-      "PostgreSQL",
-      "MySQL",
-      "MongoDB",
-      "DynamoDB",
-    ],
+    items: ["MySQL", "PostgreSQL", "MongoDB", "DynamoDB"]
   },
   {
     title: "Cloud & DevOps",
-    items: [
-      "AWS (EC2, S3, Lambda, CloudFront)",
-      "Docker",
-      "Git",
-      "GitHub",
-      "GitLab CI/CD",
-      "Jenkins",
-      "Azure DevOps",
-    ],
+    items: ["AWS (EC2, Lambda, S3, CloudFront, Step Functions, Systems Manager, API Gateway)", "Docker", "GitLab CI", "Jenkins", "Azure DevOps"]
   },
   {
     title: "Testing & QA",
-    items: [
-      "Playwright",
-      "Cypress",
-      "Selenium",
-      "Postman",
-      "PyTest",
-      "JUnit",
-    ],
+    items: ["Playwright", "Cypress", "Selenium", "PyTest", "JUnit", "Postman", "Katalon Studio"]
   },
   {
     title: "AI & Data",
-    items: [
-      "LLM Integration (OpenAI, Gemini)",
-      "Prompt Engineering",
-      "JSON Schema Validation",
-      "Data Analysis",
-      "Tableau",
-      "Databricks",
-    ],
+    items: ["Prompt Engineering", "JSON Schema Validation", "LLM Integration (OpenAI, Gemini APIs)"]
   },
+  {
+    title: "Tools",
+    items: ["JIRA", "Confluence", "Tableau", "Databricks", "GitHub", "GitLab", "Git", "Bitbucket"]
+  }
 ];
-
-// ============================================================================
-// FEATURED PROJECTS
-// ============================================================================
-// Portfolio projects showcasing technical skills and creativity
 
 export const projects = [
   {
-    title: "Subtext AI",
-    description:"Automated the detection of logical contradictions in Product Requirements Documents (PRDs), potentially saving 15+ hours of manual developer-to-product-manager back-and-forth per sprint.",
-    tech: ["FastAPI", "React", "Python", "LLM Integration", "Docker", "JSON Schema"],
-    links: {
-      live: "https://subtextai.netlify.app/",
-      github: "https://github.com/SR-Pittu/SubTextAI",
-    },
+    title: "Subtext AI – LLM-Based Intelligent Requirements Analysis System",
+    description: "Built an LLM-powered system to detect implicit requirements, edge cases, and ambiguities in user stories and acceptance criteria. Designed structured output generation (clarifying questions, improved acceptance criteria) using prompt engineering and JSON schema validation. Developed scalable backend using FastAPI and frontend using React. Reduced ambiguity in requirements, improving development clarity and minimizing downstream rework.",
+    tech: ["FastAPI", "React", "LLM", "OpenAI API", "JSON Schema Validation", "Python", "JavaScript"],
+    links: { live: "", github: "" }
   },
-
   {
-    title: "WindBorne Visualizer",
-    description:"Engineered a high-frequency data visualization interface handling real-time atmospheric updates. Optimized React rendering to maintain 60fps while processing large telemetry datasets via external APIs",
-    tech: ["React", "JavaScript", "APIs", "Data Visualization", "Charts"],
-    links: {
-      live: "https://windbornevisualizer.netlify.app/", 
-      github: "https://github.com/SR-Pittu/WindBorneVisualizer",
-    },
+    title: "WindBorne Visualizer – Full-Stack Data Dashboard",
+    description: "Developed a React-based dashboard visualizing real-time telemetry and weather data. Implemented backend data aggregation and analytics workflows. Deployed application with optimized caching and real-time data handling.",
+    tech: ["React", "Python", "JavaScript", "Data Visualization"],
+    links: { live: "", github: "" }
   },
-
   {
-    title: "Playwright Kanban Validation Framework",
-    description:"Developed a data-driven framework using Playwright and TypeScript, implementing the Page Object Model (POM) to decouple test logic from UI selectors, ensuring long-term maintainability.",    
-    tech: ["Playwright", "TypeScript", "Automation Testing", "CI/CD"],
-    links: {
-      live: "",
-      github: "https://github.com/SR-Pittu/Playwright-Kanban-Validation",
-    },
+    title: "Career Predictor - Web Application",
+    description: "Built a web application using Python, Flask, and MongoDB to predict career paths based on user inputs. Integrated machine learning models with frontend and backend workflows. Implemented secure input handling and end-to-end data processing.",
+    tech: ["Python", "Flask", "MongoDB", "Machine Learning", "JavaScript"],
+    links: { live: "", github: "" }
   },
-
   {
-    title: "Career Predictor (Machine Learning)",
-    description:"Built a machine learning application that predicts suitable career paths based on user inputs using classification models, data preprocessing, and feature engineering.",    
-    tech: ["Python", "Machine Learning", "Scikit-learn", "Data Analysis"],
-    links: {
-      live: "",
-      github: "https://github.com/SR-Pittu/CareerPredictor",
-    },
-  },
-
-  {
-    title: "Automated System Health Monitor",
-    description:
-      "Command-line tool that parses HTTP server logs and generates insights such as request frequency, error rates, and usage trends for debugging and monitoring.",
-    tech: ["Python", "CLI", "Log Parsing", "Data Analysis"],
-    links: {
-      live: "",
-      github: "https://github.com/SR-Pittu/HTTP-Log-Analyzer",
-    },
-  },
-
-  {
-    title: "Weather App",
-    description:
-      "Responsive weather application that fetches and displays real-time weather data from external APIs with dynamic UI updates.",
-    tech: ["JavaScript", "HTML", "CSS", "API Integration"],
-    links: {
-      live: "https://sr-pittu.github.io/weatherApp/",
-      github: "https://github.com/SR-Pittu/weatherApp",
-    },
-  },
+    title: "Playwright Kanban Validation",
+    description: "Designed a scalable end-to-end automation framework using Playwright. Implemented reusable components, fixtures, and cross-browser testing support. Enabled automated validation of application workflows.",
+    tech: ["Playwright", "JavaScript", "Test Automation"],
+    links: { live: "", github: "" }
+  }
 ];
-
-// ============================================================================
-// EDUCATION
-// ============================================================================
-// Academic background and degrees
 
 export const education = [
   {
     school: "Northwest Missouri State University",
     degree: "Master's, Computer Science",
-    dates: "AUG 2022 — DEC 2023",
-    gpa: "4.0 / 4.0",
-    coursework: [
-      "Object Oriented Programming using Java",
-      "Web Applications and Services",
-      "Advanced Database Systems",
-      "Project Management in Business and Technology",
-      "Mobile Computing: iOS",
-      "Application Design: Patterns and Frameworks",
-      "Machine Learning"
-    ]
+    dates: "August 2022 - December 2023",
+    gpa: "4.0",
+    coursework: ["Object Oriented Programming using Java", "Web applications and Services", "Advanced Database Systems", "Project Management in Business and Technology", "Mobile Computing: iOS", "Application Design: Patterns and Frameworks", "Machine Learning"]
   },
   {
     school: "Acharya Nagarjuna University",
     degree: "Bachelor's, Computer Science & Engineering",
-    dates: "JUN 2018 — JUN 2022",
-    gpa: "3.5 / 4.0",
-    coursework: [
-      "Operating Systems",
-      "Data Structures using C",
-      "Software Engineering",
-      "Algorithms",
-      "Data Engineering",
-      "Cloud Computing",
-      "Machine Learning",
-      "Unix Shell Programming",
-      "Artificial Intelligence",
-      "Network Programming",
-      "Problem Solving using C"
-    ]
+    dates: "June 2018 - June 2022",
+    gpa: "3.5",
+    coursework: ["Operating Systems", "Data Structures using C", "Software Engineering", "Algorithms", "Data Engineering", "Cloud Computing", "Machine Learning", "Unix Shell Programming", "Artificial Intelligence", "Network Programming", "Problem Solving using C"]
   }
 ];
 
-// ============================================================================
-// CERTIFICATIONS
-// ============================================================================
-// Professional certifications and credentials
-
 export const certifications = [
-  { title: "AWS Certified Cloud Practitioner", org: "Amazon Web Services", year: "2023" },
-  { title: "Katalon Practitioner Level Certification", org: "Katalon Studio", year: "2024" },
+  { title: "AWS Certified Cloud Practitioner", org: "AWS", year: "Oct 2023 - Oct 2026" },
+  { title: "Katalon Practitioner Level Certification", org: "Katalon", year: "Mar 2024 - Mar 2028" }
 ];
