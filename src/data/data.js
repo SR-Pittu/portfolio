@@ -129,25 +129,35 @@ export const projects = [
     title: "Subtext AI – LLM-Based Intelligent Requirements Analysis System",
     description: "Built an LLM-powered system to detect implicit requirements, edge cases, and ambiguities in user stories and acceptance criteria. Designed structured output generation (clarifying questions, improved acceptance criteria) using prompt engineering and JSON schema validation. Developed scalable backend using FastAPI and frontend using React. Reduced ambiguity in requirements, improving development clarity and minimizing downstream rework.",
     tech: ["FastAPI", "React", "LLM", "OpenAI API", "JSON Schema Validation", "Python", "JavaScript"],
-    links: { live: "", github: "" }
+    links: { live: "https://subtextai.netlify.app/", github: "https://github.com/SR-Pittu/SubTextAI" }
   },
   {
     title: "WindBorne Visualizer – Full-Stack Data Dashboard",
     description: "Developed a React-based dashboard visualizing real-time telemetry and weather data. Implemented backend data aggregation and analytics workflows. Deployed application with optimized caching and real-time data handling.",
     tech: ["React", "Python", "JavaScript", "Data Visualization"],
-    links: { live: "", github: "" }
+    links: { live: "https://windborne-visualizer.netlify.app/", github: "https://github.com/SR-Pittu/WindBorneVisualizer" }
   },
   {
-    title: "Career Predictor - Web Application",
+    title: "Career Predictor - Web Application (Machine Learning)",
     description: "Built a web application using Python, Flask, and MongoDB to predict career paths based on user inputs. Integrated machine learning models with frontend and backend workflows. Implemented secure input handling and end-to-end data processing.",
     tech: ["Python", "Flask", "MongoDB", "Machine Learning", "JavaScript"],
-    links: { live: "", github: "" }
+    links: { live: "", github: "https://github.com/SR-Pittu/CareerPredictor" }
   },
   {
     title: "Playwright Kanban Validation",
     description: "Designed a scalable end-to-end automation framework using Playwright. Implemented reusable components, fixtures, and cross-browser testing support. Enabled automated validation of application workflows.",
     tech: ["Playwright", "JavaScript", "Test Automation"],
-    links: { live: "", github: "" }
+    links: { live: "", github: "https://github.com/SR-Pittu/Playwright-Kanban-Validation" }
+  },
+   {
+    title: "Automated System Health Monitor",
+    description:
+      "Command-line tool that parses HTTP server logs and generates insights such as request frequency, error rates, and usage trends for debugging and monitoring.",
+    tech: ["Python", "CLI", "Log Parsing", "Data Analysis"],
+    links: {
+      live: "",
+      github: "https://github.com/SR-Pittu/automated-system-health-monitor",
+    },
   }
 ];
 
