@@ -257,10 +257,11 @@ rm -rf .vite && npm run build
 npm run lint
 ```
 
-# Email not sending
-# 1. Verify .env variables are set correctly
-# 2. Check EmailJS dashboard for service/template status
-# 3. Ensure email template variables match form field names
+#### Email not sending
+
+1. Verify .env variables are set correctly
+2. Check EmailJS dashboard for service/template status
+3. Ensure email template variables match form field names
 
 
 ---
