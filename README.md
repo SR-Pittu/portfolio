@@ -198,6 +198,9 @@ git clone https://github.com/SR-Pittu/Portfolio.git
 cd Portfolio
 npm install
 
+# Add environment variables
+cp .env.example .env  # Update with your EmailJS credentials
+
 # Development
 npm run dev
 
@@ -225,9 +228,18 @@ Customize styling by modifying CSS variables in `src/index.css`:
 
 ###  Deploy
 
-**Netlify**: Push to GitHub → connect repo → auto-deploys  
-**Vercel**: Import project → one-click deploy  
+**Important**: Never commit `.env` with real credentials!
+
+**Netlify**: 
+- Push to GitHub → connect repo → auto-deploys
+- Add environment variables in Netlify dashboard
+
+**Vercel**: 
+- Import project → one-click deploy
+- Add environment variables in Vercel project settings
+
 **Other**: Build runs `npm run build` → deploy `dist/` folder
+
 
 ---
 
@@ -244,6 +256,13 @@ rm -rf .vite && npm run build
 # ESLint errors
 npm run lint
 ```
+
+# Email not sending
+# 1. Verify .env variables are set correctly
+# 2. Check EmailJS dashboard for service/template status
+# 3. Ensure email template variables match form field names
+
+
 ---
 
 ### 👤 Author
