@@ -14,6 +14,7 @@ A modern, fully-responsive portfolio website built with React, Vite, and Tailwin
 -  Component-based architecture
 -  Git-inspired experience timeline
 -  Interactive orbit skills display
+-  Email servicing with **EmailJS** integration
 -  Secure and accessible
 
 ---
@@ -47,6 +48,7 @@ Portfolio/
 ├── tailwind.config.js              # Tailwind CSS theme config
 ├── postcss.config.js               # PostCSS plugins
 ├── eslint.config.js                # Code quality rules
+├── .env                          # Environment variables (e.g., EmailJS keys)
 ├── .gitignore                      # Git ignore patterns
 └── README.md                       # Documentation
 ```
@@ -62,7 +64,7 @@ Portfolio/
 4. **Projects** - Horizontal carousel of work samples
 5. **Skills** - Interactive circular skill display
 6. **Education** - Academic credentials and courses
-7. **Contact** - Form and contact information
+7. **Contact** - Form and contact information with email servicing
 8. **Footer** - Copyright and social links
 
 ----
@@ -107,8 +109,10 @@ Portfolio/
 
 **Contact Form**
 - Name, email, message fields
-- Email client integration
-- Contact information display
+- **EmailJS integration** for secure email delivery
+- Real-time form validation and status feedback
+- Success/error messaging
+- Contact information display (email, location)
 
 **Footer**
 - Social media links
@@ -136,6 +140,51 @@ Portfolio/
 - **Tailwind CSS** 4.2.1 - Styling
 - **Lucide React** 0.575.0 - Icons
 - **Framer Motion** 12.34.3 - Animations
+- **EmailJS** - Email service integration for contact forms
+
+
+---
+
+###  Email Servicing Setup
+
+The portfolio includes **EmailJS integration** for handling contact form submissions directly to your inbox.
+
+#### Configuration
+
+1. **Get EmailJS Credentials**
+   - Sign up at [EmailJS](https://www.emailjs.com/)
+   - Create a service (Gmail, Outlook, etc.)
+   - Create an email template
+   - Copy your Service ID, Template ID, and Public Key
+
+2. **Add Environment Variables**
+   
+   Create `.env` file in project root:
+   ```
+   VITE_EMAILJS_SERVICE_ID=your_service_id
+   VITE_EMAILJS_TEMPLATE_ID=your_template_id
+   VITE_EMAILJS_PUBLIC_KEY=your_public_key
+   ```
+
+
+3. **EmailJS Template Variables**
+   
+   Your EmailJS template should use these variables:
+   - `{{from_name}}` - Visitor's name
+   - `{{from_email}}` - Visitor's email
+   - `{{subject}}` - Message subject
+   - `{{message}}` - Message content
+
+
+
+#### Features
+- ✅ Real-time form validation
+- ✅ Submit status feedback (sending, success, error)
+- ✅ Secure credential handling via environment variables
+- ✅ Automatic form reset on success
+- ✅ Error handling with user-friendly messages
+- ✅ Disabled submit button during sending
+
 
 ---
 

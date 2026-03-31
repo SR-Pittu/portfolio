@@ -5,13 +5,14 @@
  * Features:
  * - Horizontal scroll gallery (carousel)
  * - Next/Previous navigation buttons
+ * - Auto-scrolling carousel with pause on hover
  * - Project cards with descriptions, tech stacks, and links
  * - Responsive design (full width mobile, limited desktop)
  * - Conditional button rendering (hides links if not provided)
  * - Smooth scroll behavior on desktop
  */
 
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
 import { projects } from "../data/data";
 
@@ -71,9 +72,11 @@ function ActionButton({ href, children, outline, icon }) {
  * - Manages carousel scroll functionality
  * - Displays projects in horizontal layout
  * - Provides navigation controls
+ * - Auto-scrolls every 4 seconds, pauses on hover
  */
 export default function Projects() {
   const scrollerRef = useRef(null);
+  const intervalRef = useRef(null);
 
   /**
    * Scroll the carousel by a percentage of its width
@@ -87,6 +90,49 @@ export default function Projects() {
     const amount = Math.round(el.clientWidth * 0.9) * dir;
     el.scrollBy({ left: amount, behavior: "smooth" });
   };
+
+  /**
+   * Auto-scroll to next project or loop back to start
+   */
+  const autoScroll = () => {
+    const el = scrollerRef.current;
+    if (!el) return;
+
+    const { scrollLeft, clientWidth, scrollWidth } = el;
+    const isAtEnd = scrollLeft + clientWidth >= scrollWidth - 10; // Small tolerance
+
+    if (isAtEnd) {
+      // Loop back to start
+      el.scrollTo({ left: 0, behavior: "smooth" });
+    } else {
+      // Scroll to next
+      scrollByCards(1);
+    }
+  };
+
+  /**
+   * Start auto-scrolling
+   */
+  const startAutoScroll = () => {
+    if (intervalRef.current) return;
+    intervalRef.current = setInterval(autoScroll, 3000); // 3 seconds
+  };
+
+  /**
+   * Stop auto-scrolling
+   */
+  const stopAutoScroll = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+  };
+
+  // Start auto-scroll on mount, stop on unmount
+  useEffect(() => {
+    startAutoScroll();
+    return () => stopAutoScroll();
+  }, []);
 
   return (
     <section id="projects" className="py-16 sm:py-20 md:py-24 border-t border-slate-100">
@@ -123,6 +169,8 @@ export default function Projects() {
         {/* Horizontal scrollable carousel container */}
         <div
           ref={scrollerRef}
+          onMouseEnter={stopAutoScroll}
+          onMouseLeave={startAutoScroll}
           className="
             -mx-4 sm:-mx-6
             px-4 sm:px-6
