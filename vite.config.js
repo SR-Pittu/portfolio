@@ -12,9 +12,10 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'           // React plugin for JSX support and fast refresh
 import tailwindcss from '@tailwindcss/vite'        // Tailwind CSS Vite plugin for styling
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
 export default defineConfig({
-  plugins: [
-    react(),             // Enables React JSX transformation and Hot Module Replacement
-    tailwindcss(),       // Enables Tailwind CSS preprocessing and JIT compilation
-  ],
+  plugins: [// Enables React JSX transformation and Hot Module Replacement
+  react(), // Enables Tailwind CSS preprocessing and JIT compilation
+  tailwindcss(), cloudflare()],
 })
